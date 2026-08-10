@@ -1,7 +1,7 @@
 <div align="center">
-  <img src="https://img.icons8.com/?size=512&id=v9hN7Kz72o1X&format=png" alt="Logo" width="100" height="100" />
-  <h1>ClayLite CRM</h1>
-  <p><strong>A hyper-personalized, AI-powered internship application and outreach CRM.</strong></p>
+  <img src="public/logo.png" alt="Automater Logo" width="220" />
+  <h1>Automater</h1>
+  <p><strong>A hyper-personalized, AI-powered outreach & application CRM.</strong></p>
 
   <p>
     <a href="https://nextjs.org/"><img src="https://img.shields.io/badge/Next.js-14+-black?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js" /></a>
