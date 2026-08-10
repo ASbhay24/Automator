@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="public/logo.png" alt="Automater Logo" width="220" />
+  <img src="logo.png" alt="Automater Logo" width="220" />
   <h1>Automater</h1>
   <p><strong>A hyper-personalized, AI-powered outreach & application CRM.</strong></p>
 
