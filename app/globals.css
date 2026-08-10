@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+/* ------------------------------------------------------------------ */
+/* ClayLite — Dark SaaS Design Tokens                                  */
+/* ------------------------------------------------------------------ */
+:root {
+  --background: #09090b;
+  --foreground: #fafafa;
+  --card: #18181b;
+  --card-border: #27272a;
+  --accent: #06b6d4;
+  --accent-blue: #2563eb;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+}
+
+/* ------------------------------------------------------------------ */
+/* Scrollbar                                                           */
+/* ------------------------------------------------------------------ */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46;
+}
+
+/* ------------------------------------------------------------------ */
+/* Glow button effect                                                  */
+/* ------------------------------------------------------------------ */
+.glow-btn {
+  position: relative;
+  overflow: hidden;
+}
+.glow-btn::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  background: linear-gradient(135deg, #06b6d4, #2563eb, #06b6d4);
+  border-radius: inherit;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.glow-btn:hover::before {
+  opacity: 0.6;
+}
+
+/* ------------------------------------------------------------------ */
+/* Subtle animation for enriching rows                                 */
+/* ------------------------------------------------------------------ */
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: inset 0 0 0 1px rgba(6, 182, 212, 0.1);
+  }
+  50% {
+    box-shadow: inset 0 0 0 1px rgba(6, 182, 212, 0.3);
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Selection / focus overrides                                         */
+/* ------------------------------------------------------------------ */
+::selection {
+  background: rgba(6, 182, 212, 0.25);
+  color: #fafafa;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
